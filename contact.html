@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style type="text/css">
+    *{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #eee;
+}
+body{
+            background-color: rgb(34, 33, 33);
+        }
+        .name{
+            color: rgb(250, 250, 168);
+        }
+        .nav{
+             display: flex;
+             justify-content: space-around;
+             padding-top: 40px;
+        }
+        .nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        .nav ul li{
+            padding-left: 65px;
+        }
+        ul li:hover{
+            color: rgb(250, 250, 168);
+            text-decoration: underline;
+            
+        }
+        a{
+            color: white;
+            text-decoration: none;     
+        }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.about, .contact {
+    width: 45%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #aaa;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #ccc;
+}
+
+input, textarea, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input, textarea {
+    background-color: #222;
+    color: #fff;
+}
+
+button {
+    background-color: #f39c12;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #d35400;
+}
+</style>
+<body>
+    <div class="nav">
+        <div class="name">Min Phone Pyae Naing</div>
+        <div>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="portfolio.html"><li>Portfolio</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <section class="about">
+            <h1>About Me.</h1>
+            <h2>Interactive Front-end Developer.</h2>
+            <p>
+                I'm Min Phone Pyae Naing, a web developer who loves building 
+                <span class="highlight">responsive websites</span>. 
+                I enjoy solving design challenges, creating intuitive user experiences, 
+                and imagining rich web applications.
+            </p>
+            <p>
+                When I'm not coding, I study and explore new technologies. <span class="highlight">Currently open for work!</span>
+            </p>
+            <div class="icons">
+                
+                <img src="image/html.png" alt="HTML">
+                <img src="image/css.png" alt="CSS">
+                
+            </div>
+        </section>
+
+        <section class="contact">
+            <h1>Let's talk.</h1>
+            <p>New projects, freelance inquiry, or even a coffee.</p>
+            <form action="#" method="post">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
